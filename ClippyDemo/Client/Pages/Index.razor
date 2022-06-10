@@ -1,0 +1,80 @@
+﻿@page "/"
+
+<PageTitle>Clippy Demo</PageTitle>
+<div class="row" style="margin-top:2px;">
+    <div class="col">
+        <h3>Clippy is back!</h3>
+        <p>
+            Add Clippy to your Blazor applications in just a line of code. For more information about this component,
+            visit the <a href="" target="_blank">post</a> on <a href="https://www.puresourcecode.com/" target="_blank">PureSourceCode.com</a>
+        </p>
+    </div>
+</div>
+<div class="row" style="margin-top:2px;">
+    <div class="col">
+        <select @bind="agentName" class="classic" style="margin-bottom:2px;">
+            @foreach (var value in Enum.GetValues<AgentName>()) {
+                <option value="@value">@value</option>
+            }
+        </select>
+        <br />
+        <button class="btn btn-primary" onclick="@(async () => await clippy.Load(agentName))">Load</button>
+    </div>
+</div>
+<div class="row" style="margin-top:2px;">
+    <div class="col">
+        <button class="btn btn-primary" onclick="@(async () => await Welcome())">Welcome</button>
+    </div>
+</div>
+<div class="row" style="margin-top:2px;">
+    <div class="col">
+        <button class="btn btn-primary" onclick="@(async () => await clippy.AnimateRandom())">Animate Random</button>
+    </div>
+</div>
+<div class="row" style="margin-top:2px;">    
+    <div class="col">
+        <button class="btn btn-primary" onclick="@(async () => await clippy.PlayAnimation(ClippyAnimations.GoodBye))">Play GoodBye</button>
+    </div>
+</div>
+<div class="row" style="margin-top:2px;">    
+    <div class="col">
+        <button class="btn btn-primary" onclick="@(async () => await clippy.PlayAnimation(ClippyAnimations.CheckingSomething))">Play Checking something</button>
+    </div>
+</div>
+<div class="row" style="margin-top:2px;">    
+    <div class="col">
+        <button class="btn btn-primary" onclick="@(async () => await clippy.PlayAnimation(ClippyAnimations.Thinking))">Play Thinking</button>
+    </div>
+</div>
+<div class="row" style="margin-top:2px;">    
+    <div class="col">
+        <button class="btn btn-primary" onclick="@(async () => await clippy.Speak("Hello Blazor users. I am here again!"))">Speak Text</button>
+    </div>
+</div>
+<div class="row" style="margin-top:2px;">    
+    <div class="col">
+        <button class="btn btn-primary" onclick="@(async () => await clippy.GestureAt(50,50))">Gesture At 50,50</button>
+    </div> 
+</div>
+<div class="row" style="margin-top:2px;">    
+    <div class="col">
+        <button class="btn btn-primary" onclick="@(async () => await clippy.Hide())">Hide</button>
+    </div> 
+</div>
+
+@code {
+    [Inject] 
+    public ClippyService clippy { get; set; }
+
+    public AgentName agentName = AgentName.Clippy;
+
+    async Task Welcome()
+    {
+        await clippy.PlayAnimation(ClippyAnimations.GetAttention);
+        await clippy.Speak("Hello Blazor! Do you like it?");
+        await clippy.Speak("I can help your users. You know I can do that :)");
+        await clippy.PlayAnimation(ClippyAnimations.CheckingSomething);
+        await clippy.Speak("I helped whole generation of people with PC :)");
+        await clippy.PlayAnimation(ClippyAnimations.GoodBye);
+    }
+}
