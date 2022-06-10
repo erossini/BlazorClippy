@@ -3,12 +3,13 @@ Do you remember Clippy? If the answer is no, please go away!
 
 This is a component for [Blazor WebAssembly](https://www.puresourcecode.com/tag/blazor-webassembly/) and [Blazor Server](https://www.puresourcecode.com/tag/blazor-server/). The component is built with .NET6.
 
-
 Some useful link:
 - Source code available on [GitHub](https://github.com/erossini/BlazorClippy)
 - Demo website [here](https://clippy.puresourcecode.com/)
 - More info about this component on [PureSourceCode.com](https://www.puresourcecode.com/dotnet/blazor/clippy-blazor-component/)
 - Support and forum [here](https://www.puresourcecode.com/forum/clippy/)
+
+## Who is Clippy?
 
 Clippy is an Office assistant that helped users when they were using any of the Microsoft Office applications. 
 Clippy's role was to communicate with users and give corresponding actions. The original name was Clippit, but it was later nicknamed "Clippy".
