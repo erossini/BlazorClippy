@@ -1,7 +1,9 @@
 # Clippy for Blazor
 Do you remember Clippy? If the answer is no, please go away!
 
-[Blazor WebAssembly](https://www.puresourcecode.com/tag/blazor-webassembly/) and [Blazor Server](https://www.puresourcecode.com/tag/blazor-server/). The components is build with .NET6.
+This is a component for [Blazor WebAssembly](https://www.puresourcecode.com/tag/blazor-webass9embly/) and [Blazor Server](https://www.puresourcecode.com/tag/blazor-server/). The components is build with .NET6.
+
+The demo application is available [here](https://clippy.puresourcecode.com/).
 
 Clippy is an Office assistant that helped users when they were using any of the Microsoft Office applications. 
 Clippy's role was to communicate with users and give corresponding actions. The original name was Clippit, but it was later nicknamed "Clippy".
@@ -90,7 +92,7 @@ await clippy.Load(agentName);
 - Rocky
 - Rover
 
-![Clippy agents](assets/agents-for-clippy.png)
+![Clippy agents](https://github.com/erossini/BlazorClippy/blob/main/assets/agents-for-clippy.png)
 
 ## Clippy functions
 
@@ -167,8 +169,8 @@ await clippy.PlayAnimation(ClippyAnimations.GoodBye);
 ## Screenshot demo
 The demo application shows all the functionalities offer from the component. Select an agent from the list and then click *Load*.
 
-![Clippy agents](assets/Screenshot1.png)
+![Clippy agents](https://github.com/erossini/BlazorClippy/blob/main/assets/Screenshot1.png)
 
 Here the list of agents available.
 
-![Clippy agents](assets/Screenshot2.png)
+![Clippy agents](https://github.com/erossini/BlazorClippy/blob/main/assets/Screenshot2.png)
