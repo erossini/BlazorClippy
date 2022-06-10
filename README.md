@@ -92,7 +92,7 @@ await clippy.Load(agentName);
 - Rocky
 - Rover
 
-![Clippy agents](https://github.com/erossini/BlazorClippy/blob/main/assets/agents-for-clippy.png)
+![Clippy agents](https://user-images.githubusercontent.com/9497415/173025842-4b6b42e7-4dec-45ef-a3e6-e7ddfb107ce2.png)
 
 ## Clippy functions
 
@@ -169,8 +169,8 @@ await clippy.PlayAnimation(ClippyAnimations.GoodBye);
 ## Screenshot demo
 The demo application shows all the functionalities offer from the component. Select an agent from the list and then click *Load*.
 
-![Clippy agents](https://github.com/erossini/BlazorClippy/blob/main/assets/Screenshot1.png)
+![](https://user-images.githubusercontent.com/9497415/173026049-e29bd8d2-689f-4830-8e48-65447b2bd202.png)
 
 Here the list of agents available.
 
-![Clippy agents](https://github.com/erossini/BlazorClippy/blob/main/assets/Screenshot2.png)
+![](https://user-images.githubusercontent.com/9497415/173026144-73c5594e-c85f-4365-aa53-442c9cede671.png)
