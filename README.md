@@ -1,3 +1,5 @@
+![Clippy](https://user-images.githubusercontent.com/9497415/173037488-4f7fc446-9ef5-4480-b4d2-f842887e9410.png)
+
 # Clippy for Blazor
 Do you remember Clippy? If the answer is no, please go away!
 
