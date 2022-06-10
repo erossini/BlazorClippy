@@ -1,0 +1,2 @@
+# BlazorClippy
+Clippy Blazor component
